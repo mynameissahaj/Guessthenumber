@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guess the Number Game</title>
+	<style>
+		h1 {
+			text-align: center;
+		}
+		p {
+			font-size: 20px;
+			text-align: center;
+		}
+		input[type="number"] {
+			font-size: 20px;
+			padding: 10px;
+			margin: 20px;
+		}
+		button {
+			font-size: 20px;
+			padding: 10px;
+			margin: 20px;
+		}
+		pre {
+			background-color: #f1f1f1;
+			padding: 10px;
+			font-family: monospace;
+			font-size: 14px;
+			white-space: pre-wrap;
+		}
+	</style>
+</head>
+<body>
+	<h1>Guess the Number Game</h1>
+	<p>I am thinking of a number between 1 and 100. Can you guess what it is?</p>
+	<input type="number" id="guess" placeholder="Enter your guess">
+	<button onclick="checkGuess()">Guess</button>
+	<p id="result"></p>
+
+
+
+	<script>
+		// generate a random number between 1 and 100
+		var number = Math.floor(Math.random() * 100) + 1;
+
+		function checkGuess() {
+			var guess = document.getElementById("guess").value;
+			var result = document.getElementById("result");
+			if (guess == number) {
+				result.innerHTML = "Congratulations! You guessed the number!";
+			} else if (guess < number) {
+				result.innerHTML = "Too low. Guess again.";
+			} else {
+				result.innerHTML = "Too high. Guess again.";
+			}
+		}
+	</script>
+</body>
+
+<h2> This site was made by <em> ❤️❤️Sahaj Panchal ❤️❤️</em>If you want you to know Sahaj Panchal and publish a site click <a href="https://mynameissahaj.github.io/Sahajthehacker/">here</a></h2>
+<style scoped>
+.redText {color:red;}
+</style>
+<p class="redText">Copyright ©  All rights reserved 2023-2023 Sahaj Panchal</p>
+    <img src="https://img0-placeit-net.s3-accelerate.amazonaws.com/uploads/stage/stage_image/56418/optimized_large_thumb_stage.jpg">
+      
+
+     
